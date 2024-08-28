@@ -37,13 +37,13 @@ const Hero = () => {
 
           <p
             className="text-center md: tracking-wider 
-            mb-4 text-sm md:text-lg lg:text-2xl"
+            mb-8 text-sm md:text-lg lg:text-2xl"
           >
             Hi, I&apos;m Byakko a developer based Tokyo
           </p>
 
           <a href="#about">
-            <MagicButton />
+            <MagicButton title="Show my work" />
           </a>
         </div>
       </div>
