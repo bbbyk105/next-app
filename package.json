@@ -13,6 +13,7 @@
     "@react-three/fiber": "^8.17.6",
     "@types/react-reconciler": "^0.28.8",
     "@types/stats.js": "^0.17.3",
+    "@types/three": "^0.168.0",
     "@types/webxr": "^0.5.20",
     "clsx": "^2.1.1",
     "framer-motion": "^11.3.30",
