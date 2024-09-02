@@ -1,6 +1,6 @@
 import { cn } from "../../utils/cn";
 import { BackgroundGradientAnimation } from "./GradientBg";
-import  GridGlobe  from "./GridGlobe";
+import GridGlobe from "./GridGlobe";
 
 export const BentoGrid = ({
   className,
@@ -93,13 +93,37 @@ export const BentoGridItem = ({
           <div className="font-sans text-lg lg:text-3xl max-w-96 font-bold z-10">
             {title}
           </div>
-        </div>
-        {id === 2 && <GridGlobe />}
 
-        {id === 3 && (
-          <div>
-          </div>
-        )}
+          {id === 2 && <GridGlobe />}
+
+          {id === 3 && (
+            <div className="flex gap-1 lg:gap-5 w-fit absolute -right-3 lg:-right-2">
+              <div className="flex flex-col gap-3 lg:gap-8">
+                {["React.js", "Next.js", "TypeScript"].map((item) => (
+                  <span
+                    key={item}
+                    className="py-2 lg:py4 lg:px-3 px-3 text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10132E]"
+                  >
+                    {item}
+                  </span>
+                ))}
+                <span className="py-4 px-3 rounded-lg text-center bg-[#10132e]" />
+              </div>
+              {/* もし増えたら入れていく */}
+              {/* <div className="flex flex-col gap-3 lg:gap-8">
+                {["", "", ""].map((item) => (
+                  <span
+                    key={item}
+                    className="py-2 lg:py4 lg:px-3 px-3 text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10132E]"
+                  >
+                    {item}
+                  </span>
+                ))}
+                <span className="py-4 px-3 rounded-lg text-center bg-[#10132e]" />
+              </div> */}
+            </div>
+          )}
+        </div>
       </div>
     </div>
   );
