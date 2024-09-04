@@ -17,7 +17,7 @@ const sentryWebpackPluginOptions = {
         enabled: true,
     },
     hideSourceMaps: true,
-    disableLogger: true,
+    disableLogger: false,
     automaticVercelMonitors: true,
     authToken: process.env.SENTRY_AUTH_TOKEN,
 };
