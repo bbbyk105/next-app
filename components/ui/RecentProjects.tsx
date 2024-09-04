@@ -3,7 +3,6 @@ import React from "react";
 import { PinContainer } from "./3d-pin";
 import { FaLocationArrow } from "react-icons/fa";
 
-
 const RecentProjects = () => {
   return (
     <div className="py-20" id="projects">
@@ -16,15 +15,15 @@ const RecentProjects = () => {
             key={id}
             className="sm:h-[41rem] h-[32rem] lg:min-h-[32.5rem] flex items-center justify-center sm:w-[570px] w-[80vw]"
           >
-            <PinContainer title={title} href={link}>
+            <PinContainer title={title}>
               <div className="relative flex items-center justify-center sm:w-[570px] w-[80vw] overflow-hidden sm:h-[40vh] h-[30vh] mb-10">
-                <div className="relative w-full h-full overflow-hidden">
-                  <img src="/bg.png" alt="Background" />
-                </div>
+                <a href={link} className="absolute inset-0 z-50">
+                  <img src="/bg.png" alt="Background" className="w-full h-full object-cover" />
+                </a>
                 <img
                   src={img}
                   alt={title}
-                  className="z-10 absolute bottom-0 transform rotate-25"
+                  className="z-20 absolute bottom-0 transform rotate-25"
                 />
               </div>
               <h1 className="font-bold lg:text-2xl md:text-xl text-base line-clamp-1">
@@ -39,7 +38,7 @@ const RecentProjects = () => {
                 <div className="flex items-center">
                   {iconLists.map((icon, index) => (
                     <div
-                      key={index} 
+                      key={index}
                       className="border border-white/[0.2] rounded-full bg-black lg:w-10 lg:h-10 w-8 h-8 flex justify-center items-center"
                       style={{
                         transform: `translateX(-${5 * index}px)`,
