@@ -20,6 +20,7 @@ const sentryWebpackPluginOptions = {
     disableLogger: false,
     automaticVercelMonitors: true,
     authToken: process.env.SENTRY_AUTH_TOKEN,
+    SENTRY_URL: process.env.SENTRY_URL || 'https://sentry.io',
 };
 
 export default withSentryConfig(nextConfig, sentryWebpackPluginOptions);
