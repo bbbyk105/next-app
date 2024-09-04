@@ -73,7 +73,7 @@ export const projects = [
   {
     id: 1,
     title: "Naruto illustrated book",
-    des: "",
+    des: "Naruto API を利用してナルト図鑑を作成しました",
     img: "/naruto.png",
     iconLists: ["/re.svg"],
     link: "https://naruto-dex.netlify.app/",
@@ -81,7 +81,7 @@ export const projects = [
   {
     id: 2,
     title: "Spotify Music App",
-    des: "You can easily search and try out music.",
+    des: "Spotify APIとtailwindcssを使った音楽試曲アプリです",
     img: "/musicapp.png",
     iconLists: ["/re.svg", "/tail.svg"],
     link: "https://spotifymusic-app.netlify.app",
@@ -89,7 +89,7 @@ export const projects = [
   {
     id: 3,
     title: "SNS app ",
-    des: "It is a bulletin board style sns application by supabase and React",
+    des: "SupabaseとReactを使って掲示板アプリを開発しました",
     img: "/sns.png",
     iconLists: ["/re.svg", "/tail.svg","/supabase.png"],
     link: "https://sns-by-spabase-bbbyk105.netlify.app",
