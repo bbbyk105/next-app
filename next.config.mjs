@@ -19,7 +19,7 @@ const sentryWebpackPluginOptions = {
     hideSourceMaps: true,
     disableLogger: true,
     automaticVercelMonitors: true,
-    authToken: process.env.SENTRY_AUTH_TOKEN, // ここに環境変数からトークンを取得
+    authToken: process.env.SENTRY_AUTH_TOKEN,
 };
 
 export default withSentryConfig(nextConfig, sentryWebpackPluginOptions);
