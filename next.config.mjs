@@ -22,4 +22,11 @@ const sentryWebpackPluginOptions = {
     authToken: process.env.SENTRY_AUTH_TOKEN,
 };
 
+// 環境変数の値をログに出力
+if (process.env.SENTRY_AUTH_TOKEN) {
+    console.log('Sentry Auth Token:', process.env.SENTRY_AUTH_TOKEN);
+} else {
+    console.warn('Sentry Auth Token is not defined');
+}
+
 export default withSentryConfig(nextConfig, sentryWebpackPluginOptions);
