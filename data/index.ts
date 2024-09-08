@@ -99,7 +99,7 @@ export const projects = [
     id: 4,
     title: "AI Code Reviewer",
     des: "OpenAIのAPIを利用してAI Code Reviewerを作成しました",
-    img: "/p4.svg",
+    img: "/ai.png",
     iconLists: ["/re.svg", "/tail.svg"],
     link: "https://ai-code-reviewerjj.netlify.app/",
   },
