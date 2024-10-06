@@ -90,7 +90,7 @@ export const projects = [
   {
     id: 3,
     title: "SNS app ",
-    des: "※現在停止中 SupabaseとReactを使って掲示板アプリを開発しました",
+    des: "SupabaseとReactを使って掲示板アプリを開発しました",
     img: "/sns.png",
     iconLists: ["/re.svg", "/tail.svg","/supabase.png"],
     link: "https://sns-by-spabase-bbbyk105.netlify.app",
